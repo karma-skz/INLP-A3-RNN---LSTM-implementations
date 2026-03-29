@@ -15,7 +15,7 @@ data:
 
 decryption:
   model_type: lstm
-  max_seq_len:128
+  max_seq_len: 128
   checkpoint:
     source: local
     local_path: outputs/checkpoints/task1_lstm.pt
