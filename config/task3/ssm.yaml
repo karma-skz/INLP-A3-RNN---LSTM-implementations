@@ -1,0 +1,41 @@
+seed: 42
+use_cuda: true
+
+data:
+  plain_path: data/plain.txt
+  cipher_paths:
+    - data/cipher_01.txt
+    - data/cipher_02.txt
+    - data/cipher_03.txt
+    - data/cipher_04.txt
+  val_ratio: 0.1
+  test_ratio: 0.1
+  eval_split: test
+  max_lines:
+
+decryption:
+  model_type: lstm
+  max_seq_len:
+  checkpoint:
+    source: local
+    local_path: outputs/checkpoints/task1_lstm.pt
+    repo_id: "karma-skz/inlp-assignment3-models"
+    hf_filename: task1_lstm.pt
+
+language_model:
+  context_len: 16
+  replace_threshold: 0.05
+  checkpoint:
+    source: local
+    local_path: outputs/checkpoints/task2_ssm.pt
+    repo_id: "karma-skz/inlp-assignment3-models"
+    hf_filename: task2_ssm.pt
+
+paths:
+  results_dir: outputs/results
+
+wandb:
+  enabled: true
+  project: inlp-a3
+  run_name: task3_ssm
+  dir: outputs/wandb

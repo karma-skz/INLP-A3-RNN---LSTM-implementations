@@ -1,0 +1,38 @@
+seed: 42
+
+data:
+  plain_path: data/plain.txt
+  cipher_train_path: data/cipher_00.txt
+  cipher_eval_path: data/cipher_00.txt
+  val_ratio: 0.1
+  test_ratio: 0.1
+  max_seq_len:
+
+model:
+  emb_dim: 128
+  hidden_dim: 256
+  num_layers: 2
+  dropout: 0.15
+
+train:
+  batch_size: 64
+  epochs: 10
+  lr: 0.0005
+  grad_clip: 1.0
+  use_cuda: true
+
+checkpoint:
+  source: local
+  local_path: outputs/checkpoints/task1_rnn.pt
+  push_to_hf: true
+  repo_id: "karma-skz/inlp-assignment3-models"
+  hf_filename: task1_rnn.pt
+
+paths:
+  results_dir: outputs/results
+
+wandb:
+  enabled: true
+  project: inlp-a3
+  run_name: task1_rnn
+  dir: outputs/wandb

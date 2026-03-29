@@ -1,0 +1,17 @@
+[wandb] run url: https://wandb.ai/karma-skz-/inlp-a3/runs/h68hqweb
+Processing Files (1 / 1)      : 100%|██████████████████████████████████| 41.5MB / 41.5MB,  0.00B/s  
+[task2_bilstm] CUDA OOM, retrying with batch_size=32
+[task2_bilstm] CUDA OOM, retrying with batch_size=16
+[task2_bilstm] epoch=1 train_loss=7.1365 train_ppl=1257.03 val_loss=6.7574 val_ppl=860.36
+[task2_bilstm] epoch=2 train_loss=6.4867 train_ppl=656.32 val_loss=6.4622 val_ppl=640.49
+[task2_bilstm] epoch=3 train_loss=6.2234 train_ppl=504.41 val_loss=6.3117 val_ppl=550.99
+[task2_bilstm] epoch=4 train_loss=6.0298 train_ppl=415.64 val_loss=6.2349 val_ppl=510.24
+[task2_bilstm] epoch=5 train_loss=5.9024 train_ppl=365.93 val_loss=6.1723 val_ppl=479.28
+[task2_bilstm] epoch=6 train_loss=5.8261 train_ppl=339.02 val_loss=6.1244 val_ppl=456.87
+[task2_bilstm] epoch=7 train_loss=5.7015 train_ppl=299.32 val_loss=6.0363 val_ppl=418.32
+[task2_bilstm] epoch=8 train_loss=5.6135 train_ppl=274.10 val_loss=5.9521 val_ppl=384.54
+New Data Upload               : |                                      |  0.00B /  0.00B,  0.00B/s  
+  ...eckpoints/task2_bilstm.pt: 100%|██████████████████████████████████| 41.5MB / 41.5MB
+No files have been modified since last commit. Skipping to prevent empty commit.
+                                                                                                    
+[task2_bilstm] wrote results: outputs/results/task2_bilstm.txt

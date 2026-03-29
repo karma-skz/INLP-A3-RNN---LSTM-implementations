@@ -1,0 +1,59 @@
+[wandb] run url: https://wandb.ai/karma-skz-/inlp-a3/runs/niyn18hr
+Traceback (most recent call last):                                                                  
+[task1_rnn] epoch=1 train_loss=2.2633 val_loss=2.1660
+[task1_rnn] epoch=2 train_loss=2.1477 val_loss=2.0839
+[task1_rnn] epoch=3 train_loss=2.0294 val_loss=1.8731
+[task1_rnn] epoch=4 train_loss=1.8383 val_loss=1.6586
+[task1_rnn] epoch=5 train_loss=1.6821 val_loss=1.5040
+[task1_rnn] epoch=6 train_loss=1.5710 val_loss=1.4048
+[task1_rnn] epoch=7 train_loss=1.4919 val_loss=1.3307
+[task1_rnn] epoch=8 train_loss=1.4348 val_loss=1.2697
+[task1_rnn] epoch=9 train_loss=1.3912 val_loss=1.2317
+[task1_rnn] epoch=10 train_loss=1.3573 val_loss=1.1992
+  File "/home/karma/Documents/sem4/inlp/asmts/assignment3-karma-skz/.venv/lib/python3.14/site-packages/huggingface_hub/utils/_http.py", line 720, in hf_raise_for_status
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/karma/Documents/sem4/inlp/asmts/assignment3-karma-skz/.venv/lib/python3.14/site-packages/httpx/_models.py", line 829, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '403 Forbidden' for url 'https://huggingface.co/api/repos/create'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/karma/Documents/sem4/inlp/asmts/assignment3-karma-skz/main.py", line 58, in <module>
+    main()
+    ~~~~^^
+  File "/home/karma/Documents/sem4/inlp/asmts/assignment3-karma-skz/main.py", line 55, in main
+    module.main(config_path=args.config, mode=args.mode)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/karma/Documents/sem4/inlp/asmts/assignment3-karma-skz/src/task1/rnn_train.py", line 99, in main
+    maybe_push_to_hf(
+    ~~~~~~~~~~~~~~~~^
+        path=config["checkpoint"]["local_path"],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        filename=config["checkpoint"].get("hf_filename"),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/karma/Documents/sem4/inlp/asmts/assignment3-karma-skz/src/common/artifacts.py", line 34, in maybe_push_to_hf
+    push_to_hub(path=path, repo_id=repo_id, path_in_repo=filename)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/karma/Documents/sem4/inlp/asmts/assignment3-karma-skz/src/utils/hf_wandb.py", line 62, in push_to_hub
+    api.create_repo(repo_id=repo_id, token=token, exist_ok=True)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/karma/Documents/sem4/inlp/asmts/assignment3-karma-skz/.venv/lib/python3.14/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/home/karma/Documents/sem4/inlp/asmts/assignment3-karma-skz/.venv/lib/python3.14/site-packages/huggingface_hub/hf_api.py", line 4023, in create_repo
+    raise err
+  File "/home/karma/Documents/sem4/inlp/asmts/assignment3-karma-skz/.venv/lib/python3.14/site-packages/huggingface_hub/hf_api.py", line 4010, in create_repo
+    hf_raise_for_status(r)
+    ~~~~~~~~~~~~~~~~~~~^^^
+  File "/home/karma/Documents/sem4/inlp/asmts/assignment3-karma-skz/.venv/lib/python3.14/site-packages/huggingface_hub/utils/_http.py", line 802, in hf_raise_for_status
+    raise _format(HfHubHTTPError, message, response) from e
+huggingface_hub.errors.HfHubHTTPError: (Request ID: Root=1-69c692cf-598423571e4d45d65533f95c;88fc74a5-aa7c-4207-9421-78c0138f5d12)
+
+403 Forbidden: You don't have the rights to create a model under the namespace "karma-skz".
+Cannot access content at: https://huggingface.co/api/repos/create.
+Make sure your token has the correct permissions.

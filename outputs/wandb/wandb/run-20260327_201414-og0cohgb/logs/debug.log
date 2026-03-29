@@ -1,0 +1,83 @@
+2026-03-27 20:14:14,501 INFO    MainThread:715295 [wandb_setup.py:_flush():81] Current SDK version is 0.25.0
+2026-03-27 20:14:14,501 INFO    MainThread:715295 [wandb_setup.py:_flush():81] Configure stats pid to 715295
+2026-03-27 20:14:14,501 INFO    MainThread:715295 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2026-03-27 20:14:14,501 INFO    MainThread:715295 [wandb_init.py:setup_run_log_directory():717] Logging user logs to outputs/wandb/wandb/run-20260327_201414-og0cohgb/logs/debug.log
+2026-03-27 20:14:14,501 INFO    MainThread:715295 [wandb_init.py:setup_run_log_directory():718] Logging internal logs to outputs/wandb/wandb/run-20260327_201414-og0cohgb/logs/debug-internal.log
+2026-03-27 20:14:14,501 INFO    MainThread:715295 [wandb_init.py:init():844] calling init triggers
+2026-03-27 20:14:14,501 INFO    MainThread:715295 [wandb_init.py:init():849] wandb.init called with sweep_config: {}
+config: {'seed': 42, 'data': {'plain_path': 'data/plain.txt', 'cipher_train_path': 'data/cipher_00.txt', 'cipher_eval_path': 'data/cipher_00.txt', 'val_ratio': 0.1, 'test_ratio': 0.1, 'max_seq_len': None}, 'model': {'emb_dim': 128, 'hidden_dim': 256, 'num_layers': 2, 'dropout': 0.15}, 'train': {'batch_size': 64, 'epochs': 10, 'lr': 0.0005, 'grad_clip': 1.0, 'use_cuda': True}, 'checkpoint': {'source': 'local', 'local_path': 'outputs/checkpoints/task1_rnn.pt', 'push_to_hf': True, 'repo_id': 'karma-skz/inlp-assignment3-models', 'hf_filename': 'task1_rnn.pt'}, 'paths': {'results_dir': 'outputs/results'}, 'wandb': {'enabled': True, 'project': 'inlp-a3', 'run_name': 'task1_rnn', 'dir': 'outputs/wandb'}, '_wandb': {}}
+2026-03-27 20:14:14,501 INFO    MainThread:715295 [wandb_init.py:init():892] starting backend
+2026-03-27 20:14:14,716 INFO    MainThread:715295 [wandb_init.py:init():895] sending inform_init request
+2026-03-27 20:14:14,720 INFO    MainThread:715295 [wandb_init.py:init():903] backend started and connected
+2026-03-27 20:14:14,721 INFO    MainThread:715295 [wandb_init.py:init():973] updated telemetry
+2026-03-27 20:14:14,723 INFO    MainThread:715295 [wandb_init.py:init():997] communicating run to backend with 90.0 second timeout
+2026-03-27 20:14:16,210 INFO    MainThread:715295 [wandb_init.py:init():1042] starting run threads in backend
+2026-03-27 20:14:16,268 INFO    MainThread:715295 [wandb_run.py:_console_start():2524] atexit reg
+2026-03-27 20:14:16,268 INFO    MainThread:715295 [wandb_run.py:_redirect():2373] redirect: wrap_raw
+2026-03-27 20:14:16,268 INFO    MainThread:715295 [wandb_run.py:_redirect():2442] Wrapping output streams.
+2026-03-27 20:14:16,268 INFO    MainThread:715295 [wandb_run.py:_redirect():2465] Redirects installed.
+2026-03-27 20:14:16,270 INFO    MainThread:715295 [wandb_init.py:init():1082] run started, returning control to user process
+2026-03-27 20:14:26,649 INFO    wandb-AsyncioManager-main:715295 [service_client.py:_forward_responses():134] Reached EOF.
+2026-03-27 20:14:26,649 INFO    wandb-AsyncioManager-main:715295 [mailbox.py:close():155] Closing mailbox, abandoning 1 handles.
+2026-03-27 20:14:29,989 ERROR   wandb-AsyncioManager-main:715295 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/karma/Documents/sem4/inlp/asmts/assignment3-karma-skz/.venv/lib/python3.14/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/karma/Documents/sem4/inlp/asmts/assignment3-karma-skz/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 45, in publish
+    await self._send_server_request(request)
+  File "/home/karma/Documents/sem4/inlp/asmts/assignment3-karma-skz/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 87, in _send_server_request
+    await self._drain_writer()
+  File "/home/karma/Documents/sem4/inlp/asmts/assignment3-karma-skz/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 96, in _drain_writer
+    await self._writer.drain()
+  File "/home/karma/.local/share/uv/python/cpython-3.14.2-linux-x86_64-gnu/lib/python3.14/asyncio/streams.py", line 386, in drain
+    await self._protocol._drain_helper()
+  File "/home/karma/.local/share/uv/python/cpython-3.14.2-linux-x86_64-gnu/lib/python3.14/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-03-27 20:14:29,996 ERROR   wandb-AsyncioManager-main:715295 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/karma/Documents/sem4/inlp/asmts/assignment3-karma-skz/.venv/lib/python3.14/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/karma/Documents/sem4/inlp/asmts/assignment3-karma-skz/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 45, in publish
+    await self._send_server_request(request)
+  File "/home/karma/Documents/sem4/inlp/asmts/assignment3-karma-skz/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 87, in _send_server_request
+    await self._drain_writer()
+  File "/home/karma/Documents/sem4/inlp/asmts/assignment3-karma-skz/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 96, in _drain_writer
+    await self._writer.drain()
+  File "/home/karma/.local/share/uv/python/cpython-3.14.2-linux-x86_64-gnu/lib/python3.14/asyncio/streams.py", line 386, in drain
+    await self._protocol._drain_helper()
+  File "/home/karma/.local/share/uv/python/cpython-3.14.2-linux-x86_64-gnu/lib/python3.14/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-03-27 20:14:29,996 ERROR   wandb-AsyncioManager-main:715295 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/karma/Documents/sem4/inlp/asmts/assignment3-karma-skz/.venv/lib/python3.14/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/karma/Documents/sem4/inlp/asmts/assignment3-karma-skz/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 45, in publish
+    await self._send_server_request(request)
+  File "/home/karma/Documents/sem4/inlp/asmts/assignment3-karma-skz/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 87, in _send_server_request
+    await self._drain_writer()
+  File "/home/karma/Documents/sem4/inlp/asmts/assignment3-karma-skz/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 96, in _drain_writer
+    await self._writer.drain()
+  File "/home/karma/.local/share/uv/python/cpython-3.14.2-linux-x86_64-gnu/lib/python3.14/asyncio/streams.py", line 386, in drain
+    await self._protocol._drain_helper()
+  File "/home/karma/.local/share/uv/python/cpython-3.14.2-linux-x86_64-gnu/lib/python3.14/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-03-27 20:14:29,996 ERROR   wandb-AsyncioManager-main:715295 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/karma/Documents/sem4/inlp/asmts/assignment3-karma-skz/.venv/lib/python3.14/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/karma/Documents/sem4/inlp/asmts/assignment3-karma-skz/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 45, in publish
+    await self._send_server_request(request)
+  File "/home/karma/Documents/sem4/inlp/asmts/assignment3-karma-skz/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 78, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/karma/Documents/sem4/inlp/asmts/assignment3-karma-skz/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 87, in _send_server_request
+    await self._drain_writer()
+  File "/home/karma/Documents/sem4/inlp/asmts/assignment3-karma-skz/.venv/lib/python3.14/site-packages/wandb/sdk/lib/service/service_client.py", line 96, in _drain_writer
+    await self._writer.drain()
+  File "/home/karma/.local/share/uv/python/cpython-3.14.2-linux-x86_64-gnu/lib/python3.14/asyncio/streams.py", line 386, in drain
+    await self._protocol._drain_helper()
+  File "/home/karma/.local/share/uv/python/cpython-3.14.2-linux-x86_64-gnu/lib/python3.14/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost

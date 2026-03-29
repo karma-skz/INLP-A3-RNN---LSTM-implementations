@@ -1,0 +1,48 @@
+[wandb] run url: https://wandb.ai/karma-skz-/inlp-a3/runs/n8du0zow
+Traceback (most recent call last):                                                                       
+[task2_bilstm] CUDA OOM, retrying with batch_size=32
+[task2_bilstm] CUDA OOM, retrying with batch_size=16
+  File "/home/karma/Documents/sem4/inlp/asmts/assignment3-karma-skz/main.py", line 58, in <module>
+    main()
+    ~~~~^^
+  File "/home/karma/Documents/sem4/inlp/asmts/assignment3-karma-skz/main.py", line 55, in main
+    module.main(config_path=args.config, mode=args.mode)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/karma/Documents/sem4/inlp/asmts/assignment3-karma-skz/src/task2/bilstm_train.py", line 75, in main
+    train_loss, train_ppl = run_mlm_epoch(
+                            ~~~~~~~~~~~~~^
+        model,
+        ^^^^^^
+    ...<3 lines>...
+        grad_clip=grad_clip,
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/karma/Documents/sem4/inlp/asmts/assignment3-karma-skz/src/task2/common.py", line 143, in run_mlm_epoch
+    loss.backward()
+    ~~~~~~~~~~~~~^^
+  File "/home/karma/Documents/sem4/inlp/asmts/assignment3-karma-skz/.venv/lib/python3.14/site-packages/torch/_tensor.py", line 630, in backward
+    torch.autograd.backward(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        self, gradient, retain_graph, create_graph, inputs=inputs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/karma/Documents/sem4/inlp/asmts/assignment3-karma-skz/.venv/lib/python3.14/site-packages/torch/autograd/__init__.py", line 364, in backward
+    _engine_run_backward(
+    ~~~~~~~~~~~~~~~~~~~~^
+        tensors,
+        ^^^^^^^^
+    ...<5 lines>...
+        accumulate_grad=True,
+        ^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/karma/Documents/sem4/inlp/asmts/assignment3-karma-skz/.venv/lib/python3.14/site-packages/torch/autograd/graph.py", line 865, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        t_outputs, *args, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )  # Calls into the C++ engine to run the backward pass
+    ^
+KeyboardInterrupt

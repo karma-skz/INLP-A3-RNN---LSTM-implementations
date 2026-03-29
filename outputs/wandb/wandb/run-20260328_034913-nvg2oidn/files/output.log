@@ -1,0 +1,4 @@
+[wandb] run url: https://wandb.ai/karma-skz-/inlp-a3/runs/nvg2oidn
+task3_bilstm: 100%|███████████████████████████████████████████████| 4/4 [2:58:19<00:00, 2674.86s/it]
+                                                                                                    
+[task3_bilstm] wrote results: outputs/results/task3_bilstm.txt

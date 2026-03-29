@@ -1,0 +1,13 @@
+{"time":"2026-03-27T22:27:34.420840076+05:30","level":"INFO","msg":"stream: starting","core version":"0.25.0"}
+{"time":"2026-03-27T22:27:34.919541924+05:30","level":"INFO","msg":"stream: created new stream","id":"uu3kh47p"}
+{"time":"2026-03-27T22:27:34.919586676+05:30","level":"INFO","msg":"handler: started","stream_id":"uu3kh47p"}
+{"time":"2026-03-27T22:27:34.919651685+05:30","level":"INFO","msg":"stream: started","id":"uu3kh47p"}
+{"time":"2026-03-27T22:27:34.919695998+05:30","level":"INFO","msg":"writer: started","stream_id":"uu3kh47p"}
+{"time":"2026-03-27T22:27:34.919701782+05:30","level":"INFO","msg":"sender: started","stream_id":"uu3kh47p"}
+{"time":"2026-03-28T01:06:24.115851076+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/karma-skz-/inlp-a3/uu3kh47p/file_stream\": read tcp 172.16.0.2:59242->35.186.228.49:443: read: connection reset by peer"}
+{"time":"2026-03-28T01:35:27.405285743+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-03-28T01:35:28.246290345+05:30","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2026-03-28T01:35:28.277906238+05:30","level":"INFO","msg":"stream: closing","id":"uu3kh47p"}
+{"time":"2026-03-28T01:35:28.277923246+05:30","level":"INFO","msg":"handler: closed","stream_id":"uu3kh47p"}
+{"time":"2026-03-28T01:35:28.277971788+05:30","level":"INFO","msg":"sender: closed","stream_id":"uu3kh47p"}
+{"time":"2026-03-28T01:35:28.277986984+05:30","level":"INFO","msg":"stream: closed","id":"uu3kh47p"}

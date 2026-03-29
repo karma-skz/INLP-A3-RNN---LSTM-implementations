@@ -1,0 +1,14 @@
+[wandb] run url: https://wandb.ai/karma-skz-/inlp-a3/runs/ez93ysci
+Processing Files (1 / 1)      : 100%|██████████████████████████████████| 45.8MB / 45.8MB, 5.59MB/s  
+[task2_ssm] epoch=1 train_loss=3.8894 train_ppl=48.88 val_loss=3.9347 val_ppl=51.15
+[task2_ssm] epoch=2 train_loss=3.3818 train_ppl=29.42 val_loss=3.9191 val_ppl=50.36
+[task2_ssm] epoch=3 train_loss=3.0813 train_ppl=21.79 val_loss=3.9943 val_ppl=54.29
+[task2_ssm] epoch=4 train_loss=2.8158 train_ppl=16.71 val_loss=4.1554 val_ppl=63.78
+[task2_ssm] epoch=5 train_loss=2.5883 train_ppl=13.31 val_loss=4.2725 val_ppl=71.70
+[task2_ssm] epoch=6 train_loss=2.4035 train_ppl=11.06 val_loss=4.3815 val_ppl=79.96
+[task2_ssm] epoch=7 train_loss=2.2491 train_ppl=9.48 val_loss=4.5245 val_ppl=92.25
+[task2_ssm] epoch=8 train_loss=2.1202 train_ppl=8.33 val_loss=4.6612 val_ppl=105.76
+New Data Upload               : 100%|██████████████████████████████████| 45.8MB / 45.8MB, 5.59MB/s  
+  .../checkpoints/task2_ssm.pt: 100%|██████████████████████████████████| 45.8MB / 45.8MB            
+                                                                                                    
+[task2_ssm] wrote results: outputs/results/task2_ssm.txt

@@ -1,0 +1,15 @@
+[wandb] run url: https://wandb.ai/karma-skz-/inlp-a3/runs/y99g3yx2
+Processing Files (1 / 1)      : 100%|██████████████████████████████████| 1.04MB / 1.04MB,  305kB/s  
+[task1_rnn] epoch=1 train_loss=2.2633 val_loss=2.1660
+[task1_rnn] epoch=2 train_loss=2.1477 val_loss=2.0839
+[task1_rnn] epoch=3 train_loss=2.0294 val_loss=1.8731
+[task1_rnn] epoch=4 train_loss=1.8383 val_loss=1.6586
+[task1_rnn] epoch=5 train_loss=1.6821 val_loss=1.5040
+[task1_rnn] epoch=6 train_loss=1.5710 val_loss=1.4048
+[task1_rnn] epoch=7 train_loss=1.4919 val_loss=1.3307
+[task1_rnn] epoch=8 train_loss=1.4348 val_loss=1.2697
+[task1_rnn] epoch=9 train_loss=1.3912 val_loss=1.2317
+[task1_rnn] epoch=10 train_loss=1.3573 val_loss=1.1992
+New Data Upload               : 100%|██████████████████████████████████| 1.04MB / 1.04MB,  305kB/s  
+  .../checkpoints/task1_rnn.pt: 100%|██████████████████████████████████| 1.04MB / 1.04MB            
+[task1_rnn] wrote results: outputs/results/task1_rnn.txt

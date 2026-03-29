@@ -1,0 +1,12 @@
+{"time":"2026-03-27T21:13:32.502015991+05:30","level":"INFO","msg":"stream: starting","core version":"0.25.0"}
+{"time":"2026-03-27T21:13:33.032541576+05:30","level":"INFO","msg":"stream: created new stream","id":"ez93ysci"}
+{"time":"2026-03-27T21:13:33.032591747+05:30","level":"INFO","msg":"handler: started","stream_id":"ez93ysci"}
+{"time":"2026-03-27T21:13:33.032697869+05:30","level":"INFO","msg":"stream: started","id":"ez93ysci"}
+{"time":"2026-03-27T21:13:33.032759875+05:30","level":"INFO","msg":"writer: started","stream_id":"ez93ysci"}
+{"time":"2026-03-27T21:13:33.03276205+05:30","level":"INFO","msg":"sender: started","stream_id":"ez93ysci"}
+{"time":"2026-03-27T21:18:57.269120393+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-03-27T21:19:08.170395107+05:30","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2026-03-27T21:19:08.172112507+05:30","level":"INFO","msg":"stream: closing","id":"ez93ysci"}
+{"time":"2026-03-27T21:19:08.172119041+05:30","level":"INFO","msg":"handler: closed","stream_id":"ez93ysci"}
+{"time":"2026-03-27T21:19:08.172147086+05:30","level":"INFO","msg":"sender: closed","stream_id":"ez93ysci"}
+{"time":"2026-03-27T21:19:08.172150006+05:30","level":"INFO","msg":"stream: closed","id":"ez93ysci"}

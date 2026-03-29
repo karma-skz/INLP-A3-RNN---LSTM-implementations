@@ -1,0 +1,41 @@
+seed: 42
+
+data:
+  plain_path: data/plain.txt
+  val_ratio: 0.1
+  test_ratio: 0.1
+  min_freq: 1
+  max_train_examples: 200000
+  max_val_examples: 50000
+
+model:
+  emb_dim: 256
+  state_dim: 256
+  num_layers: 2
+  dropout: 0.15
+  tie_embeddings: true
+  context_len: 16
+
+train:
+  batch_size: 128
+  epochs: 8
+  lr: 0.0005
+  weight_decay: 0.01
+  grad_clip: 1.0
+  use_cuda: true
+
+checkpoint:
+  source: local
+  local_path: outputs/checkpoints/task2_ssm.pt
+  push_to_hf: true
+  repo_id: "karma-skz/inlp-assignment3-models"
+  hf_filename: task2_ssm.pt
+
+paths:
+  results_dir: outputs/results
+
+wandb:
+  enabled: true
+  project: inlp-a3
+  run_name: task2_ssm
+  dir: outputs/wandb

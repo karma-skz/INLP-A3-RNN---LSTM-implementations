@@ -1,0 +1,5 @@
+{
+  "task": "task2_bilstm",
+  "val_loss": 5.9678730964660645,
+  "perplexity": 390.67386085848614
+}

@@ -1,0 +1,4 @@
+[wandb] run url: https://wandb.ai/karma-skz-/inlp-a3/runs/w9zqcon5
+task3_ssm: 100%|█████████████████████████████████████████████████████| 4/4 [43:30<00:00, 652.58s/it]
+                                                                                                    
+[task3_ssm] wrote results: outputs/results/task3_ssm.txt

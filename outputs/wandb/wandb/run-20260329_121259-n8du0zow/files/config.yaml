@@ -1,0 +1,97 @@
+_wandb:
+    value:
+        cli_version: 0.25.0
+        e:
+            7b8a8wdy1o51cn0280odd07a8isdk4cs:
+                args:
+                    - task2_bilstm
+                    - --mode
+                    - both
+                codePath: main.py
+                codePathLocal: main.py
+                cpu_count: 10
+                cpu_count_logical: 16
+                cudaVersion: "13.0"
+                disk:
+                    /:
+                        total: "223391858688"
+                        used: "195140222976"
+                email: goku_hj_28@yahoo.com
+                executable: /home/karma/Documents/sem4/inlp/asmts/assignment3-karma-skz/.venv/bin/python3
+                git:
+                    commit: 2b66f1b8884a516b6f6e2bc10bcdf21793ded51a
+                    remote: https://github.com/NLPMS/assignment3-karma-skz
+                gpu: NVIDIA GeForce RTX 3050 6GB Laptop GPU
+                gpu_count: 1
+                gpu_nvidia:
+                    - architecture: Ampere
+                      cudaCores: 2560
+                      memoryTotal: "6442450944"
+                      name: NVIDIA GeForce RTX 3050 6GB Laptop GPU
+                      uuid: GPU-d006aa02-1748-5581-7a4a-d2f9baeb436f
+                host: pop-os
+                memory:
+                    total: "16435507200"
+                os: Linux-6.16.3-76061603-generic-x86_64-with-glibc2.35
+                program: /home/karma/Documents/sem4/inlp/asmts/assignment3-karma-skz/main.py
+                python: CPython 3.14.2
+                root: outputs/wandb
+                startedAt: "2026-03-29T06:42:59.060137Z"
+                writerId: 7b8a8wdy1o51cn0280odd07a8isdk4cs
+        m: []
+        python_version: 3.14.2
+        t:
+            "1":
+                - 1
+                - 49
+            "2":
+                - 1
+                - 49
+            "3":
+                - 13
+                - 16
+            "4": 3.14.2
+            "5": 0.25.0
+            "12": 0.25.0
+            "13": linux-x86_64
+checkpoint:
+    value:
+        hf_filename: task2_bilstm.pt
+        local_path: outputs/checkpoints/task2_bilstm.pt
+        push_to_hf: true
+        repo_id: karma-skz/inlp-assignment3-models
+        source: local
+data:
+    value:
+        mask_prob: 0.15
+        min_freq: 1
+        plain_path: data/plain.txt
+        test_ratio: 0.1
+        val_ratio: 0.1
+model:
+    value:
+        dropout: 0.2
+        emb_dim: 192
+        hidden_dim: 192
+        max_len: null
+        num_layers: 2
+        tie_embeddings: true
+paths:
+    value:
+        results_dir: outputs/results
+seed:
+    value: 42
+train:
+    value:
+        batch_size: 64
+        epochs: 8
+        grad_clip: 1
+        lr: 0.0005
+        use_cuda: true
+        weight_decay: 0.01
+wandb:
+    value:
+        dir: outputs/wandb
+        enabled: true
+        project: inlp-a3
+        run_name: task2_bilstm
